@@ -1,0 +1,231 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi", "hello", "hey", "hello there", "hi there", "good morning",
+        "good afternoon", "good evening", "hey bot", "is anyone there",
+        "howdy", "greetings", "hii", "yo", "hey there"
+      ],
+      "responses": [
+        "Hello! Welcome to the Brainware University helpdesk. How can I help you today?",
+        "Hi there! Ask me about admissions, courses, scholarships, placements and more."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye", "goodbye", "see you later", "see you", "take care", "bye bye",
+        "i am leaving", "talk to you later", "that is all", "have a nice day",
+        "catch you later", "good night", "i have to go", "see you soon"
+      ],
+      "responses": [
+        "Goodbye! Feel free to come back anytime.",
+        "Take care! Best wishes for your studies."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks", "thank you", "thanks a lot", "thank you so much", "many thanks",
+        "that was helpful", "great thanks", "appreciate it", "cheers",
+        "thanks for the help", "thank you for your help", "awesome thanks",
+        "perfect thank you", "nice that helps", "got it thanks"
+      ],
+      "responses": [
+        "You're welcome! Let me know if you need anything else.",
+        "Happy to help! Ask me anything else about the university."
+      ]
+    },
+    {
+      "tag": "about_university",
+      "patterns": [
+        "tell me about the university", "what is brainware university", "about brainware",
+        "is the university ugc approved", "when was brainware established",
+        "is brainware university recognised", "how many students study here",
+        "give me an overview of the university", "who runs this university",
+        "is it a private university", "what is the history of the university",
+        "introduce your university", "is brainware a good university",
+        "tell me about your college", "which year was the university founded"
+      ],
+      "responses": [
+        "Brainware University is a UGC-recognised private university in West Bengal, established in 2016 under the Brainware University Act 2015. It has over 19,000 students.",
+        "Brainware University is a private university recognised by the UGC. It started in 2016 and offers 70+ programmes across 9 schools."
+      ]
+    },
+    {
+      "tag": "campus_location",
+      "patterns": [
+        "where is the university located", "campus address", "where is brainware university",
+        "how do i reach the campus", "which city is the university in",
+        "do you have more than one campus", "where is the barasat campus",
+        "where is the salt lake campus", "location of the college",
+        "address of the university", "how to get to the campus",
+        "which campus should i choose", "directions to the university",
+        "is the campus in kolkata", "what is the campus location"
+      ],
+      "responses": [
+        "Brainware University has two campuses: Barasat (Ramkrishnapur Road) and Salt Lake (Sector V), both in the Kolkata area.",
+        "You can find us at Barasat (Ramkrishnapur Road) and Salt Lake (Sector V) in Kolkata."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "which courses do you offer", "list of programmes", "what can i study here",
+        "do you offer btech", "what are the available courses", "undergraduate programmes",
+        "postgraduate courses", "do you have mba", "are there diploma courses",
+        "phd programmes", "which schools are there", "what departments do you have",
+        "courses available for law", "do you offer engineering courses",
+        "show me all the programmes"
+      ],
+      "responses": [
+        "We offer 70+ undergraduate, postgraduate, diploma and PhD programmes across 9 schools, including Engineering, Law and Management.",
+        "Brainware University has programmes at UG, PG, Diploma and PhD level across 9 schools. Tell me the field you are interested in and I can guide you."
+      ]
+    },
+    {
+      "tag": "admission_process",
+      "patterns": [
+        "how do i apply", "admission process", "how to get admission",
+        "how can i take admission", "steps to apply", "how to apply online",
+        "what is the entrance test", "is there an entrance exam",
+        "brainware entrance test", "what documents are required for admission",
+        "admission procedure", "how do i join the university", "when do admissions start",
+        "application process", "what is needed for admission"
+      ],
+      "responses": [
+        "The admission process is: apply online, appear for the Brainware Entrance Test, submit your documents and pay the fees, fill in the anti-ragging form, and receive your admission letter. Check the website for current dates.",
+        "To get admission, apply online, take the Brainware Entrance Test, submit documents and fees, complete the anti-ragging form, and collect your admission letter. For help, call 70031 62601."
+      ]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "scholarship", "are scholarships available", "do you give scholarships",
+        "scholarship for toppers", "merit scholarship", "vidyalankar scholarship",
+        "medha britti", "early bird offer", "fee waiver",
+        "any discount for students", "sports scholarship", "government scholarship",
+        "how can i get a scholarship", "financial aid", "scholarship for high marks"
+      ],
+      "responses": [
+        "Yes! Options include the Vidyalankar scholarship (50% to 100% fee waiver for high scorers), Medha Britti (for 60%+), sports scholarships, West Bengal government schemes, and an Early Bird offer of up to Rs 30,000 (terms apply).",
+        "We offer merit-based, sports and government-linked scholarships, plus an Early Bird discount of up to Rs 30,000 (terms apply). Check the website for eligibility details."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "what is the fee", "fee structure", "tuition fee", "how much does the course cost",
+        "btech fees", "course fees", "how much do i have to pay", "what are the charges",
+        "fees for mba", "total cost of the program", "how much is the annual fee",
+        "can i pay fees online", "fee payment", "cost of studying here",
+        "what is the semester fee"
+      ],
+      "responses": [
+        "Fees differ by course. Please check the Course Fees page on the Brainware University website, or call the admission office at 70031 62601 for exact amounts.",
+        "For the latest fee details of your programme, see the Course Fees page on the university website or contact admissions at 70031 62601."
+      ]
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "placement record", "how are the placements", "which companies visit",
+        "highest package", "average package", "what is the placement percentage",
+        "do you provide placements", "job opportunities after graduation",
+        "top recruiters", "placement statistics", "will i get a job",
+        "campus recruitment", "average salary of students",
+        "how many companies come for placements", "placement cell"
+      ],
+      "responses": [
+        "Brainware University reports a 98% placement rate with 1000+ recruiters. The highest package is 36+ LPA and the average is around 4 LPA.",
+        "Placements are strong: 1000+ recruiters, a 98% placement rate, a highest CTC of 36+ LPA and an average of about 4 LPA."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "how can i contact the university", "phone number", "contact number",
+        "email address", "admission office number", "how do i reach the department",
+        "customer care", "who can i call", "give me the contact details",
+        "admission helpline", "academic office contact", "email id of the university",
+        "i want to talk to someone", "help desk number", "how to contact admission team"
+      ],
+      "responses": [
+        "Admission office: 70031 62601. Academics: 33 6901 0507. Email: info@brainwareuniversity.ac.in.",
+        "You can call admissions at 70031 62601, the academic office at 33 6901 0507, or email info@brainwareuniversity.ac.in."
+      ]
+    },
+    {
+      "tag": "clubs",
+      "patterns": [
+        "what clubs are there", "student clubs", "extracurricular activities",
+        "are there any societies", "tech club", "music club", "dance club",
+        "photography club", "do you have sports activities", "cultural activities",
+        "how can i join a club", "student activities", "ai club", "campus life",
+        "what do students do besides studying"
+      ],
+      "responses": [
+        "Campus life is active, with clubs for AI, tech, cyber security, music, dance, photography, drama and more.",
+        "Students can join many clubs, including AI, tech, music, dance, photography and drama, along with sports and cultural events."
+      ]
+    },
+    {
+      "tag": "ai_curriculum",
+      "patterns": [
+        "do you teach ai", "ai courses", "is ai part of the curriculum",
+        "artificial intelligence programme", "machine learning courses",
+        "ai research lab", "ai and data science", "is there an ai research cell",
+        "courses on machine learning", "do you have ai specialisation",
+        "does the university focus on ai", "ai integrated courses",
+        "data science programme", "tell me about ai at brainware", "ai r and d cell"
+      ],
+      "responses": [
+        "Yes! Brainware integrates AI into its curriculum and also has an AI R&D cell for research and projects.",
+        "AI is part of our courses, and the university has an AI R&D cell. Ask your department about AI and machine learning electives."
+      ]
+    },
+    {
+      "tag": "exam_schedule",
+      "patterns": [
+        "when are the exams", "exam schedule", "exam dates", "academic calendar",
+        "when are the results declared", "result date", "semester exam timetable",
+        "how do i check my result", "when does the semester start", "exam time table",
+        "when is the next exam", "holidays list", "exam result",
+        "academic calendar for this year", "when do classes begin"
+      ],
+      "responses": [
+        "Exam dates and results are published on the university website under the Academic Calendar and Results sections. Please check there for the latest schedule.",
+        "For exam timetables, results and the academic calendar, visit the Brainware University website or call the academic office at 33 6901 0507."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "is hostel available", "hostel facility", "hostel fees",
+        "do you provide accommodation", "hostel rules", "where do students stay",
+        "accommodation for outstation students", "is there a girls hostel",
+        "boys hostel", "room in hostel", "hostel charges", "can i stay on campus",
+        "hostel admission", "pg near campus", "hostel details"
+      ],
+      "responses": [
+        "Hostel rules and details are available on the university website. For availability and charges, please contact the admission office at 70031 62601.",
+        "For hostel rooms, charges and rules, check the hostel page on the Brainware University website or call 70031 62601."
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "library timings", "is there a library", "library facilities",
+        "how many books are there", "can i borrow books", "library rules",
+        "digital library", "library opening hours", "e-books",
+        "how do i get a library card", "reading room", "library membership",
+        "library books issue", "library available on weekends", "tell me about the library"
+      ],
+      "responses": [
+        "The university has a library for students. For timings, borrowing rules and digital resources, please check the Library page on the university website.",
+        "Library details such as timings, book issue rules and e-resources are on the Brainware University website's library page."
+      ]
+    }
+  ]
+}
