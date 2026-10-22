@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Input, Dense, Dropout
-from tensorflow.keras.callbacks import EarlyStopping
-from tensorflow.keras.utils import to_categorical
+from keras.models import Sequential
+from keras.layers import Input, Dense, Dropout
+from keras.callbacks import EarlyStopping
+from keras.utils import to_categorical
 from preprocess import clean
 
 # 1. Load data: (sentence, tag) pairs
@@ -75,3 +75,9 @@ for key, name in [("loss", "loss_curve"), ("accuracy", "accuracy_curve")]:
     plt.title(key.capitalize())
     plt.savefig(f"reports/{name}.png"); plt.close()
 print("Saved model/ and reports/")
+
+pred = model.predict(Xte).argmax(axis=1)
+true = yte.argmax(axis=1)
+for s, t, p in zip(X_te, true, pred):
+    if t != p:
+        print(f"{s!r}: true={le.classes_[t]}, predicted={le.classes_[p]}")
