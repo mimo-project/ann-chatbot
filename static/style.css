@@ -8,8 +8,8 @@
   --red2: #b51e2b;
   --red-dim: #35151c;
   --text: #f2f1f4;
-  --muted: #90909d;
-  --muted2: #636571;
+  --muted: #a5a6b3;
+  --muted2: #858794;
   --green: #77e4ac;
   --mono: ui-monospace, 'Cascadia Mono', Consolas, monospace;
   --display: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -117,7 +117,7 @@ button:disabled {
 }
 
 .brand-sub {
-  font: 9px var(--mono);
+  font: 11px var(--mono);
   letter-spacing: 1.8px;
   color: var(--muted);
   margin-top: 5px
@@ -151,9 +151,9 @@ button:disabled {
 
 .nav-section {
   margin: 28px 0 10px 10px;
-  font: 9px var(--mono);
+  font: 11px var(--mono);
   letter-spacing: 1.7px;
-  color: #737581
+  color: #9a9ca8
 }
 
 .nav {
@@ -325,9 +325,9 @@ button:disabled {
 }
 
 .top-label .tiny {
-  font: 9px var(--mono);
+  font: 10px var(--mono);
   letter-spacing: 1.8px;
-  color: #797b87
+  color: #a0a2ae
 }
 
 .top-label strong {
@@ -439,9 +439,9 @@ button:disabled {
 }
 
 .welcome-kicker {
-  font: 10px var(--mono);
+  font: 11px var(--mono);
   letter-spacing: 2.3px;
-  color: #b7a3ab;
+  color: #c4b0b8;
   margin: 0 0 13px
 }
 
@@ -466,8 +466,8 @@ button:disabled {
 
 .prompt-label {
   text-align: left;
-  font: 9px var(--mono);
-  color: #6f707b;
+  font: 11px var(--mono);
+  color: #9a9ca8;
   letter-spacing: 1.6px;
   margin: 0 0 10px
 }
@@ -562,7 +562,7 @@ button:disabled {
 }
 
 .message-label {
-  font: 9px var(--mono);
+  font: 11px var(--mono);
   letter-spacing: 1.5px;
   color: #ff6972;
   margin: 2px 0 8px
@@ -578,8 +578,8 @@ button:disabled {
   border-radius: 3px 11px 11px 11px;
   background: linear-gradient(140deg, #17171e, #121319);
   padding: 13px 15px;
-  color: #e0dee5;
-  font-size: 12px;
+  color: #ecebf0;
+  font-size: 15px;
   line-height: 1.8;
   overflow-wrap: anywhere;
   white-space: pre-wrap
@@ -592,8 +592,8 @@ button:disabled {
 }
 
 .message-meta {
-  font: 9px var(--mono);
-  color: #666975;
+  font: 11px var(--mono);
+  color: #8e909c;
   margin-top: 7px
 }
 
@@ -633,6 +633,36 @@ button:disabled {
   width: min(790px, 100%);
   margin: 0 auto;
   padding: 8px 28px 16px
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 0 2px 10px;
+  scrollbar-width: none
+}
+
+.chips::-webkit-scrollbar {
+  display: none
+}
+
+.chip {
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: #dcdbe3;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font: 13px var(--sans);
+  cursor: pointer;
+  transition: border-color .15s, background .15s, color .15s
+}
+
+.chip:hover {
+  border-color: var(--line-hot);
+  background: var(--red-dim);
+  color: #fff
 }
 
 .composer {
@@ -695,18 +725,18 @@ button:disabled {
   align-items: center;
   gap: 12px;
   margin: 10px 2px 0;
-  color: #646672;
-  font: 9px var(--mono);
+  color: #8e909c;
+  font: 11px var(--mono);
   letter-spacing: .7px
 }
 
 .composer-bottom strong {
-  color: #8f909b;
+  color: #b3b4bf;
   font-weight: 400
 }
 
 .prototype-note {
-  color: #777581
+  color: #9a98a4
 }
 
 .panel-page {
@@ -767,8 +797,8 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #a6a5b1;
-  font: 9px var(--mono);
+  color: #b0afba;
+  font: 11px var(--mono);
   letter-spacing: 1px
 }
 
@@ -878,8 +908,8 @@ button:disabled {
 .footer {
   padding: 0 28px 15px;
   text-align: center;
-  color: #51535f;
-  font: 8px var(--mono);
+  color: #7d7f8b;
+  font: 10px var(--mono);
   letter-spacing: 1.5px
 }
 
@@ -1051,7 +1081,13 @@ button:disabled {
   }
 
   .composer-bottom {
-    font-size: 8px
+    font-size: 10px;
+    justify-content: flex-end
+  }
+
+  .key-hint,
+  .footer-long {
+    display: none
   }
 
   .page-heading {

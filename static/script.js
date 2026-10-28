@@ -13,8 +13,8 @@
   let activeHistoryId = null;
   let isLoading = false;
   const pageMeta = {
-    chat: ['INTERACTION MODULE', 'NEURAL CHAT INTERFACE'],
-    neural: ['MODEL OVERVIEW', 'NEURAL NETWORK OVERVIEW']
+    chat: ['HELPDESK', 'ASK A QUESTION'],
+    neural: ['MODEL OVERVIEW', 'HOW THE BOT WORKS']
   };
   const NO_SESSIONS = '<div class="history-item" style="color:#666874;cursor:default">No saved sessions yet</div>';
   const escapeHTML = (str) => String(str).replace(/[&<>"']/g, ch => ({
@@ -163,7 +163,7 @@
       sendMessage();
     }
   });
-  $$('.prompt-card').forEach(button => button.addEventListener('click', () => sendMessage(button.dataset.prompt)));
+  $$('.prompt-card, .chip').forEach(button => button.addEventListener('click', () => sendMessage(button.dataset.prompt)));
   $$('.nav-btn').forEach(button => button.addEventListener('click', () => switchPage(button.dataset.page)));
   $('#newChat').addEventListener('click', newChat);
   $('#sidebarToggle').addEventListener('click', () => sidebar.classList.toggle('closed'));
